@@ -1,0 +1,487 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\wwwroot\\css\\footer.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\wwwroot\\css\\footer.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\views\\perfil\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\views\\perfil\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\views\\shared\\_layoutestudiante.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\views\\shared\\_layoutestudiante.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\views\\actividadesestudiante\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\views\\actividadesestudiante\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\views\\docente\\calificaractividades.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\views\\docente\\calificaractividades.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\views\\docente\\crearactividad.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\views\\docente\\crearactividad.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\views\\actividad\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\views\\actividad\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\views\\actividad\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\views\\actividad\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\views\\actividad\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\views\\actividad\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\controllers\\actividadesestudiantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\controllers\\actividadesestudiantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\models\\actividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\models\\actividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\views\\curso\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\views\\curso\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\views\\actividadesestudiante\\realizar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\views\\actividadesestudiante\\realizar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\controllers\\actividadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\controllers\\actividadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\controllers\\docentecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\controllers\\docentecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\migrations\\20251121000009_agregarfechalimiteactividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\migrations\\20251121000009_agregarfechalimiteactividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\middleware\\checkuseractivemiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\middleware\\checkuseractivemiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\controllers\\perfilcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\controllers\\perfilcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\controllers\\rankingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\controllers\\rankingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\views\\docente\\verranking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\views\\docente\\verranking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\views\\docente\\otorgarmedallas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\views\\docente\\otorgarmedallas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\views\\docente\\eliminarmedallaotorgada.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\views\\docente\\eliminarmedallaotorgada.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\maki-\\downloads\\tareas\\robotica\\finaldiarsito\\runatalento\\views\\docente\\editarmedallaotorgada.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\views\\docente\\editarmedallaotorgada.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "footer.css",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\wwwroot\\css\\footer.css",
+              "RelativeDocumentMoniker": "RunaTalento\\wwwroot\\css\\footer.css",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\wwwroot\\css\\footer.css",
+              "RelativeToolTip": "RunaTalento\\wwwroot\\css\\footer.css",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-21T01:57:34.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\Perfil\\Index.cshtml",
+              "RelativeDocumentMoniker": "RunaTalento\\Views\\Perfil\\Index.cshtml",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\Perfil\\Index.cshtml",
+              "RelativeToolTip": "RunaTalento\\Views\\Perfil\\Index.cshtml",
+              "ViewState": "AgIAAC8BAAAAAAAAAAAmwL4BAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T01:41:59.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_LayoutEstudiante.cshtml",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\Shared\\_LayoutEstudiante.cshtml",
+              "RelativeDocumentMoniker": "RunaTalento\\Views\\Shared\\_LayoutEstudiante.cshtml",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\Shared\\_LayoutEstudiante.cshtml",
+              "RelativeToolTip": "RunaTalento\\Views\\Shared\\_LayoutEstudiante.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T01:25:55.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "EditarMedallaOtorgada.cshtml",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\Docente\\EditarMedallaOtorgada.cshtml",
+              "RelativeDocumentMoniker": "RunaTalento\\Views\\Docente\\EditarMedallaOtorgada.cshtml",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\Docente\\EditarMedallaOtorgada.cshtml",
+              "RelativeToolTip": "RunaTalento\\Views\\Docente\\EditarMedallaOtorgada.cshtml",
+              "ViewState": "AgIAAGMAAAAAAAAAAIBJwGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T00:41:14.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "EliminarMedallaOtorgada.cshtml",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\Docente\\EliminarMedallaOtorgada.cshtml",
+              "RelativeDocumentMoniker": "RunaTalento\\Views\\Docente\\EliminarMedallaOtorgada.cshtml",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\Docente\\EliminarMedallaOtorgada.cshtml",
+              "RelativeToolTip": "RunaTalento\\Views\\Docente\\EliminarMedallaOtorgada.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T00:40:51.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "OtorgarMedallas.cshtml",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\Docente\\OtorgarMedallas.cshtml",
+              "RelativeDocumentMoniker": "RunaTalento\\Views\\Docente\\OtorgarMedallas.cshtml",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\Docente\\OtorgarMedallas.cshtml",
+              "RelativeToolTip": "RunaTalento\\Views\\Docente\\OtorgarMedallas.cshtml",
+              "ViewState": "AgIAALwAAAAAAAAAAABRwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T00:40:20.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "VerRanking.cshtml",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\Docente\\VerRanking.cshtml",
+              "RelativeDocumentMoniker": "RunaTalento\\Views\\Docente\\VerRanking.cshtml",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\Docente\\VerRanking.cshtml",
+              "RelativeToolTip": "RunaTalento\\Views\\Docente\\VerRanking.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T00:30:24.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "RankingController.cs",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Controllers\\RankingController.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Controllers\\RankingController.cs",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Controllers\\RankingController.cs",
+              "RelativeToolTip": "RunaTalento\\Controllers\\RankingController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T00:28:45.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PerfilController.cs",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Controllers\\PerfilController.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Controllers\\PerfilController.cs",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Controllers\\PerfilController.cs",
+              "RelativeToolTip": "RunaTalento\\Controllers\\PerfilController.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAABRwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T00:28:28.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "RunaTalento\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "RunaTalento\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T00:17:49.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CheckUserActiveMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Middleware\\CheckUserActiveMiddleware.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Middleware\\CheckUserActiveMiddleware.cs",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Middleware\\CheckUserActiveMiddleware.cs",
+              "RelativeToolTip": "RunaTalento\\Middleware\\CheckUserActiveMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T00:16:47.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "RunaTalento\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAEBVwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T00:15:44.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20251121000009_AgregarFechaLimiteActividad.cs",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Migrations\\20251121000009_AgregarFechaLimiteActividad.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Migrations\\20251121000009_AgregarFechaLimiteActividad.cs",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Migrations\\20251121000009_AgregarFechaLimiteActividad.cs",
+              "RelativeToolTip": "RunaTalento\\Migrations\\20251121000009_AgregarFechaLimiteActividad.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAEBVwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T00:00:50.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CalificarActividades.cshtml",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\Docente\\CalificarActividades.cshtml",
+              "RelativeDocumentMoniker": "RunaTalento\\Views\\Docente\\CalificarActividades.cshtml",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\Docente\\CalificarActividades.cshtml",
+              "RelativeToolTip": "RunaTalento\\Views\\Docente\\CalificarActividades.cshtml",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAqwLoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T23:45:58.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\ActividadesEstudiante\\Index.cshtml",
+              "RelativeDocumentMoniker": "RunaTalento\\Views\\ActividadesEstudiante\\Index.cshtml",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\ActividadesEstudiante\\Index.cshtml",
+              "RelativeToolTip": "RunaTalento\\Views\\ActividadesEstudiante\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T23:45:12.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ActividadesEstudianteController.cs",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Controllers\\ActividadesEstudianteController.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Controllers\\ActividadesEstudianteController.cs",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Controllers\\ActividadesEstudianteController.cs",
+              "RelativeToolTip": "RunaTalento\\Controllers\\ActividadesEstudianteController.cs",
+              "ViewState": "AgIAAO0AAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T23:42:18.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Program.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Program.cs",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Program.cs",
+              "RelativeToolTip": "RunaTalento\\Program.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAWwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T21:11:29.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\Curso\\Details.cshtml",
+              "RelativeDocumentMoniker": "RunaTalento\\Views\\Curso\\Details.cshtml",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\Curso\\Details.cshtml",
+              "RelativeToolTip": "RunaTalento\\Views\\Curso\\Details.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAswEEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T20:37:58.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\Actividad\\Create.cshtml",
+              "RelativeDocumentMoniker": "RunaTalento\\Views\\Actividad\\Create.cshtml",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\Actividad\\Create.cshtml",
+              "RelativeToolTip": "RunaTalento\\Views\\Actividad\\Create.cshtml",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAiwGAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T20:35:44.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\Actividad\\Edit.cshtml",
+              "RelativeDocumentMoniker": "RunaTalento\\Views\\Actividad\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\Actividad\\Edit.cshtml",
+              "RelativeToolTip": "RunaTalento\\Views\\Actividad\\Edit.cshtml",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAiwG0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T20:36:44.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\Actividad\\Index.cshtml",
+              "RelativeDocumentMoniker": "RunaTalento\\Views\\Actividad\\Index.cshtml",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\Actividad\\Index.cshtml",
+              "RelativeToolTip": "RunaTalento\\Views\\Actividad\\Index.cshtml",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAmwG0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T20:37:09.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CrearActividad.cshtml",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\Docente\\CrearActividad.cshtml",
+              "RelativeDocumentMoniker": "RunaTalento\\Views\\Docente\\CrearActividad.cshtml",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\Docente\\CrearActividad.cshtml",
+              "RelativeToolTip": "RunaTalento\\Views\\Docente\\CrearActividad.cshtml",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAmwHwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T20:36:12.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\appsettings.json",
+              "RelativeDocumentMoniker": "RunaTalento\\appsettings.json",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\appsettings.json",
+              "RelativeToolTip": "RunaTalento\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-20T21:11:31.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "RunaTalento\\ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "RunaTalento\\ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-11-20T21:11:28.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "RunaTalento\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T21:11:25.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Realizar.cshtml",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\ActividadesEstudiante\\Realizar.cshtml",
+              "RelativeDocumentMoniker": "RunaTalento\\Views\\ActividadesEstudiante\\Realizar.cshtml",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Views\\ActividadesEstudiante\\Realizar.cshtml",
+              "RelativeToolTip": "RunaTalento\\Views\\ActividadesEstudiante\\Realizar.cshtml",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAswGkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T20:37:43.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Actividad.cs",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Models\\Actividad.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Models\\Actividad.cs",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Models\\Actividad.cs",
+              "RelativeToolTip": "RunaTalento\\Models\\Actividad.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T20:34:12.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DocenteController.cs",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Controllers\\DocenteController.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Controllers\\DocenteController.cs",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Controllers\\DocenteController.cs",
+              "RelativeToolTip": "RunaTalento\\Controllers\\DocenteController.cs",
+              "ViewState": "AgIAAO4BAAAAAAAAAABRwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T20:35:06.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ActividadController.cs",
+              "DocumentMoniker": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Controllers\\ActividadController.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Controllers\\ActividadController.cs",
+              "ToolTip": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\Controllers\\ActividadController.cs",
+              "RelativeToolTip": "RunaTalento\\Controllers\\ActividadController.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T20:34:40.63Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
