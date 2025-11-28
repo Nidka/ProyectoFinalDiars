@@ -5,22 +5,37 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using RunaTalento.Data;
 using RunaTalento.Models;
+using RunaTalento.Services.Controllers;
+using RunaTalento.Services.GamificacionService;
+using RunaTalento.Services.Factories;
 
 namespace RunaTalento.Controllers
 {
     /// <summary>
     /// Controlador principal del panel de docente
+    /// Implementa patrón CONTROLLER (GRASP) delegando lógica de negocio a servicios especializados
     /// </summary>
     [Authorize(Roles = "Docente")]
     public class DocenteController : Controller
     {
         private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly CalificacionBusinessController _calificacionController;
+        private readonly GamificacionService _gamificacionService;
+        private readonly ICalificacionStrategyFactory _strategyFactory;
 
-        public DocenteController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
+        public DocenteController(
+            ApplicationDbContext context,
+            UserManager<ApplicationUser> userManager,
+            CalificacionBusinessController calificacionController,
+            GamificacionService gamificacionService,
+            ICalificacionStrategyFactory strategyFactory)
         {
             _context = context;
             _userManager = userManager;
+            _calificacionController = calificacionController;
+            _gamificacionService = gamificacionService;
+            _strategyFactory = strategyFactory;
         }
 
         private async Task CargarDatosDocente()
@@ -36,30 +51,27 @@ namespace RunaTalento.Controllers
             }
         }
 
-        // GET: Docente (Página principal - redirige a Crear Actividad)
         public IActionResult Index()
         {
             return RedirectToAction(nameof(CrearActividad));
         }
 
-        // GET: Docente/CrearActividad
+        // Gestión de Actividades
         public async Task<IActionResult> CrearActividad()
         {
             await CargarDatosDocente();
-            
-            // ? CORREGIDO: Obtener los cursos asignados al docente actual usando CursoDocente
+
             var userId = _userManager.GetUserId(User);
             var cursos = await _context.CursoDocente
                 .Include(cd => cd.Curso)
                 .Where(cd => cd.IdDocente == userId)
                 .Select(cd => cd.Curso)
                 .ToListAsync();
-            
+
             ViewData["IdCurso"] = new SelectList(cursos, "IdCurso", "Nombre");
             return View();
         }
 
-        // POST: Docente/CrearActividad
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CrearActividad([Bind("Titulo,Descripcion,Puntaje,IdCurso,FechaLimite")] Actividad actividad)
@@ -75,7 +87,6 @@ namespace RunaTalento.Controllers
 
             await CargarDatosDocente();
             var userId = _userManager.GetUserId(User);
-            // ? CORREGIDO: Usar la misma query que en el GET
             var cursos = await _context.CursoDocente
                 .Include(cd => cd.Curso)
                 .Where(cd => cd.IdDocente == userId)
@@ -85,37 +96,34 @@ namespace RunaTalento.Controllers
             return View(actividad);
         }
 
-        // GET: Docente/OtorgarMedallas
+        // Gestión de Medallas
         public async Task<IActionResult> OtorgarMedallas()
         {
             await CargarDatosDocente();
-            
+
             var docenteId = _userManager.GetUserId(User);
-            
+
             ViewData["IdMedalla"] = new SelectList(_context.Medalla, "IdMedalla", "Nombre");
-            
-            // ? CORREGIDO: Obtener IDs de cursos del docente usando CursoDocente
+
             var cursosDelDocente = await _context.CursoDocente
                 .Where(cd => cd.IdDocente == docenteId)
                 .Select(cd => cd.IdCurso)
                 .ToListAsync();
-            
-            // Obtener SOLO estudiantes que han entregado actividades en cursos del docente
+
             var estudiantesDelDocente = await _context.ActividadEstudiante
                 .Include(ae => ae.Actividad)
                 .Where(ae => cursosDelDocente.Contains(ae.Actividad.IdCurso))
                 .Select(ae => ae.IdEstudiante)
                 .Distinct()
                 .ToListAsync();
-            
+
             var estudiantes = await _context.Users
                 .Where(u => estudiantesDelDocente.Contains(u.Id))
                 .OrderBy(u => u.Nombres)
                 .ToListAsync();
-            
+
             ViewData["IdEstudiante"] = new SelectList(estudiantes, "Id", "Email");
-            
-            // Obtener SOLO las medallas otorgadas por el docente actual (últimas 10)
+
             var medallasOtorgadas = await _context.MedallaEstudiante
                 .Include(me => me.Estudiante)
                 .Include(me => me.Medalla)
@@ -123,22 +131,20 @@ namespace RunaTalento.Controllers
                 .OrderByDescending(me => me.FechaOtorgada)
                 .Take(10)
                 .ToListAsync();
-            
+
             ViewBag.MedallasOtorgadas = medallasOtorgadas;
-            
+
             return View();
         }
 
-        // POST: Docente/OtorgarMedallas
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> OtorgarMedallas([Bind("IdMedalla,IdEstudiante")] MedallaEstudiante medallaEstudiante, string Motivo)
         {
             if (ModelState.IsValid)
             {
-                // Verificar si el estudiante ya tiene esta medalla
                 var existente = await _context.MedallaEstudiante
-                    .FirstOrDefaultAsync(me => me.IdMedalla == medallaEstudiante.IdMedalla 
+                    .FirstOrDefaultAsync(me => me.IdMedalla == medallaEstudiante.IdMedalla
                                             && me.IdEstudiante == medallaEstudiante.IdEstudiante);
 
                 if (existente != null)
@@ -148,12 +154,12 @@ namespace RunaTalento.Controllers
                 else
                 {
                     medallaEstudiante.FechaOtorgada = DateTime.Now;
-                    medallaEstudiante.IdDocente = _userManager.GetUserId(User); // ? Guardar ID del docente
+                    medallaEstudiante.IdDocente = _userManager.GetUserId(User);
                     _context.Add(medallaEstudiante);
                     await _context.SaveChangesAsync();
                     TempData["Success"] = "Medalla otorgada exitosamente";
                 }
-                
+
                 return RedirectToAction(nameof(OtorgarMedallas));
             }
 
@@ -161,259 +167,10 @@ namespace RunaTalento.Controllers
             ViewData["IdMedalla"] = new SelectList(_context.Medalla, "IdMedalla", "Nombre", medallaEstudiante.IdMedalla);
             var estudiantes = await _userManager.GetUsersInRoleAsync("Estudiante");
             ViewData["IdEstudiante"] = new SelectList(estudiantes, "Id", "Email", medallaEstudiante.IdEstudiante);
-            
+
             return View(medallaEstudiante);
         }
 
-        // GET: Docente/VerRanking
-        public async Task<IActionResult> VerRanking()
-        {
-            await CargarDatosDocente();
-            
-            var docenteId = _userManager.GetUserId(User);
-            
-            // ? CORREGIDO: Obtener IDs de cursos del docente usando CursoDocente
-            var cursosDelDocente = await _context.CursoDocente
-                .Where(cd => cd.IdDocente == docenteId)
-                .Select(cd => cd.IdCurso)
-                .ToListAsync();
-            
-            // Obtener IDs de estudiantes que han entregado actividades en cursos del docente
-            var estudiantesDelDocente = await _context.ActividadEstudiante
-                .Include(ae => ae.Actividad)
-                .Where(ae => cursosDelDocente.Contains(ae.Actividad.IdCurso))
-                .Select(ae => ae.IdEstudiante)
-                .Distinct()
-                .ToListAsync();
-            
-            // Obtener estudiantes con información del nivel
-            var estudiantes = await _context.Users
-                .Include(u => u.Nivel) // ? Incluir navegación al nivel
-                .Where(u => estudiantesDelDocente.Contains(u.Id))
-                .OrderByDescending(u => u.PuntajeTotal)
-                .ThenBy(u => u.Nombres)
-                .Take(100)
-                .Select(u => new
-                {
-                    u.Id,
-                    u.Nombres,
-                    u.Apellidos,
-                    u.Email,
-                    u.PuntajeTotal,
-                    u.IdNivel,
-                    NivelNombre = u.Nivel != null ? u.Nivel.Nombre : "Sin nivel", // ? Nombre del nivel
-                    MedallasCount = _context.MedallaEstudiante.Count(me => me.IdEstudiante == u.Id)
-                })
-                .ToListAsync();
-
-            return View(estudiantes);
-        }
-
-        // GET: Docente/CalificarActividades
-        public async Task<IActionResult> CalificarActividades()
-        {
-            await CargarDatosDocente();
-            
-            // ? CORREGIDO: Obtener IDs de cursos del docente usando CursoDocente
-            var docenteId = _userManager.GetUserId(User);
-            
-            var cursosDelDocente = await _context.CursoDocente
-                .Where(cd => cd.IdDocente == docenteId)
-                .Select(cd => cd.IdCurso)
-                .ToListAsync();
-            
-            // Obtener SOLO las actividades del docente actual
-            var actividadesEntregadas = await _context.ActividadEstudiante
-                .Include(ae => ae.Actividad)
-                .ThenInclude(a => a.Curso)
-                .Include(ae => ae.Estudiante)
-                .Where(ae => ae.PuntajeObtenido == null && cursosDelDocente.Contains(ae.Actividad.IdCurso))
-                .OrderByDescending(ae => ae.FechaEntrega)
-                .ToListAsync();
-
-            return View(actividadesEntregadas);
-        }
-
-        // POST: Docente/Calificar
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Calificar(int idActividadEstudiante, int puntajeObtenido)
-        {
-            var actividadEstudiante = await _context.ActividadEstudiante
-                .Include(ae => ae.Actividad)
-                .Include(ae => ae.Estudiante)
-                .FirstOrDefaultAsync(ae => ae.IdActividadEstudiante == idActividadEstudiante);
-
-            if (actividadEstudiante == null)
-            {
-                TempData["Error"] = "Actividad no encontrada";
-                return RedirectToAction(nameof(CalificarActividades));
-            }
-
-            // Validar que el puntaje esté en el rango correcto
-            if (puntajeObtenido < 0 || puntajeObtenido > actividadEstudiante.Actividad.Puntaje)
-            {
-                TempData["Error"] = $"El puntaje debe estar entre 0 y {actividadEstudiante.Actividad.Puntaje}";
-                return RedirectToAction(nameof(CalificarActividades));
-            }
-
-            // Asignar el puntaje obtenido
-            actividadEstudiante.PuntajeObtenido = puntajeObtenido;
-
-            // Actualizar el puntaje total del estudiante
-            var estudiante = await _context.Users.FindAsync(actividadEstudiante.IdEstudiante);
-            if (estudiante != null)
-            {
-                // Guardar nivel anterior para comparar
-                var nivelAnteriorId = estudiante.IdNivel;
-                var nivelAnterior = nivelAnteriorId.HasValue 
-                    ? await _context.Nivel.FindAsync(nivelAnteriorId.Value) 
-                    : null;
-                
-                // Actualizar puntaje
-                estudiante.PuntajeTotal += puntajeObtenido;
-                
-                // Actualizar el nivel del estudiante según su puntaje
-                var nuevoNivel = await _context.Nivel
-                    .Where(n => estudiante.PuntajeTotal >= n.PuntajeMinimo 
-                             && estudiante.PuntajeTotal <= n.PuntajeMaximo)
-                    .FirstOrDefaultAsync();
-                
-                if (nuevoNivel != null)
-                {
-                    estudiante.IdNivel = nuevoNivel.IdNivel;
-                }
-
-                // ? NUEVO: Otorgar incentivos automáticos
-                var incentivosObtenidos = await OtorgarIncentivosAutomaticos(estudiante);
-
-                await _context.SaveChangesAsync();
-
-                // Construir mensaje de éxito
-                var mensajeExito = $"Actividad calificada. {estudiante.Nombres} obtuvo {puntajeObtenido} puntos";
-                
-                // Verificar si subió de nivel
-                if (nivelAnteriorId == null || (nuevoNivel != null && nivelAnteriorId != nuevoNivel.IdNivel))
-                {
-                    if (nivelAnterior != null && nuevoNivel != null)
-                    {
-                        mensajeExito += $" y subió de nivel: {nivelAnterior.Nombre} ? {nuevoNivel.Nombre}";
-                    }
-                    else if (nuevoNivel != null)
-                    {
-                        mensajeExito += $" y alcanzó el nivel: {nuevoNivel.Nombre}";
-                    }
-                }
-
-                // Agregar incentivos obtenidos al mensaje
-                if (incentivosObtenidos.Any())
-                {
-                    mensajeExito += $". ?? ¡Obtuvo {incentivosObtenidos.Count} incentivo(s): {string.Join(", ", incentivosObtenidos)}!";
-                }
-
-                TempData["Success"] = mensajeExito;
-            }
-
-            return RedirectToAction(nameof(CalificarActividades));
-        }
-
-        /// <summary>
-        /// Otorga incentivos automáticos al estudiante según su puntaje
-        /// </summary>
-        private async Task<List<string>> OtorgarIncentivosAutomaticos(ApplicationUser estudiante)
-        {
-            var incentivosObtenidos = new List<string>();
-
-            // Obtener incentivos activos que el estudiante cumple pero aún no tiene
-            var incentivosDisponibles = await _context.Incentivo
-                .Where(i => i.Activo && i.PuntosRequeridos <= estudiante.PuntajeTotal)
-                .ToListAsync();
-
-            foreach (var incentivo in incentivosDisponibles)
-            {
-                // Verificar si el estudiante ya tiene este incentivo
-                var yaLoTiene = await _context.IncentivoEstudiante
-                    .AnyAsync(ie => ie.IdIncentivo == incentivo.IdIncentivo && ie.IdEstudiante == estudiante.Id);
-
-                if (!yaLoTiene)
-                {
-                    // Otorgar el incentivo
-                    var incentivoEstudiante = new IncentivoEstudiante
-                    {
-                        IdIncentivo = incentivo.IdIncentivo,
-                        IdEstudiante = estudiante.Id,
-                        FechaOtorgado = DateTime.Now,
-                        PuntajeAlObtener = estudiante.PuntajeTotal
-                    };
-
-                    _context.IncentivoEstudiante.Add(incentivoEstudiante);
-                    incentivosObtenidos.Add(incentivo.Nombre);
-                }
-            }
-
-            return incentivosObtenidos;
-        }
-
-        // GET: Docente/VistaDocumento
-        public IActionResult VistaDocumento(string url)
-        {
-            if (string.IsNullOrEmpty(url))
-            {
-                TempData["Error"] = "URL de documento no válida";
-                return RedirectToAction(nameof(CalificarActividades));
-            }
-
-            return View((object)url);
-        }
-
-        // GET: Docente/EliminarMedallaOtorgada/5
-        public async Task<IActionResult> EliminarMedallaOtorgada(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var docenteId = _userManager.GetUserId(User);
-            var medallaEstudiante = await _context.MedallaEstudiante
-                .Include(me => me.Estudiante)
-                .Include(me => me.Medalla)
-                .FirstOrDefaultAsync(me => me.IdMedallaEstudiante == id && me.IdDocente == docenteId);
-
-            if (medallaEstudiante == null)
-            {
-                TempData["Error"] = "Medalla no encontrada o no tienes permiso para eliminarla";
-                return RedirectToAction(nameof(OtorgarMedallas));
-            }
-
-            await CargarDatosDocente();
-            return View(medallaEstudiante);
-        }
-
-        // POST: Docente/EliminarMedallaOtorgada/5
-        [HttpPost, ActionName("EliminarMedallaOtorgada")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> EliminarMedallaOtorgadaConfirmed(int id)
-        {
-            var docenteId = _userManager.GetUserId(User);
-            var medallaEstudiante = await _context.MedallaEstudiante
-                .FirstOrDefaultAsync(me => me.IdMedallaEstudiante == id && me.IdDocente == docenteId);
-
-            if (medallaEstudiante != null)
-            {
-                _context.MedallaEstudiante.Remove(medallaEstudiante);
-                await _context.SaveChangesAsync();
-                TempData["Success"] = "Medalla otorgada eliminada exitosamente";
-            }
-            else
-            {
-                TempData["Error"] = "No se pudo eliminar la medalla";
-            }
-
-            return RedirectToAction(nameof(OtorgarMedallas));
-        }
-
-        // GET: Docente/EditarMedallaOtorgada/5
         public async Task<IActionResult> EditarMedallaOtorgada(int? id)
         {
             if (id == null)
@@ -434,14 +191,11 @@ namespace RunaTalento.Controllers
             }
 
             await CargarDatosDocente();
-            
-            // Cargar medallas disponibles
             ViewData["IdMedalla"] = new SelectList(_context.Medalla, "IdMedalla", "Nombre", medallaEstudiante.IdMedalla);
-            
+
             return View(medallaEstudiante);
         }
 
-        // POST: Docente/EditarMedallaOtorgada/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditarMedallaOtorgada(int id, [Bind("IdMedallaEstudiante,IdMedalla,IdEstudiante,IdDocente")] MedallaEstudiante medallaEstudiante)
@@ -462,10 +216,9 @@ namespace RunaTalento.Controllers
             {
                 try
                 {
-                    // Mantener la fecha original
                     var medallaOriginal = await _context.MedallaEstudiante.AsNoTracking()
                         .FirstOrDefaultAsync(me => me.IdMedallaEstudiante == id);
-                    
+
                     if (medallaOriginal != null)
                     {
                         medallaEstudiante.FechaOtorgada = medallaOriginal.FechaOtorgada;
@@ -492,6 +245,186 @@ namespace RunaTalento.Controllers
             await CargarDatosDocente();
             ViewData["IdMedalla"] = new SelectList(_context.Medalla, "IdMedalla", "Nombre", medallaEstudiante.IdMedalla);
             return View(medallaEstudiante);
+        }
+
+        public async Task<IActionResult> EliminarMedallaOtorgada(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var docenteId = _userManager.GetUserId(User);
+            var medallaEstudiante = await _context.MedallaEstudiante
+                .Include(me => me.Estudiante)
+                .Include(me => me.Medalla)
+                .FirstOrDefaultAsync(me => me.IdMedallaEstudiante == id && me.IdDocente == docenteId);
+
+            if (medallaEstudiante == null)
+            {
+                TempData["Error"] = "Medalla no encontrada o no tienes permiso para eliminarla";
+                return RedirectToAction(nameof(OtorgarMedallas));
+            }
+
+            await CargarDatosDocente();
+            return View(medallaEstudiante);
+        }
+
+        [HttpPost, ActionName("EliminarMedallaOtorgada")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EliminarMedallaOtorgadaConfirmed(int id)
+        {
+            var docenteId = _userManager.GetUserId(User);
+            var medallaEstudiante = await _context.MedallaEstudiante
+                .FirstOrDefaultAsync(me => me.IdMedallaEstudiante == id && me.IdDocente == docenteId);
+
+            if (medallaEstudiante != null)
+            {
+                _context.MedallaEstudiante.Remove(medallaEstudiante);
+                await _context.SaveChangesAsync();
+                TempData["Success"] = "Medalla otorgada eliminada exitosamente";
+            }
+            else
+            {
+                TempData["Error"] = "No se pudo eliminar la medalla";
+            }
+
+            return RedirectToAction(nameof(OtorgarMedallas));
+        }
+
+        // Consultas de Desempeño
+        public async Task<IActionResult> VerRanking()
+        {
+            await CargarDatosDocente();
+
+            var docenteId = _userManager.GetUserId(User);
+
+            var cursosDelDocente = await _context.CursoDocente
+                .Where(cd => cd.IdDocente == docenteId)
+                .Select(cd => cd.IdCurso)
+                .ToListAsync();
+
+            var estudiantesDelDocente = await _context.ActividadEstudiante
+                .Include(ae => ae.Actividad)
+                .Where(ae => cursosDelDocente.Contains(ae.Actividad.IdCurso))
+                .Select(ae => ae.IdEstudiante)
+                .Distinct()
+                .ToListAsync();
+
+            var estudiantes = await _context.Users
+                .Include(u => u.Nivel)
+                .Where(u => estudiantesDelDocente.Contains(u.Id))
+                .OrderByDescending(u => u.PuntajeTotal)
+                .ThenBy(u => u.Nombres)
+                .Take(100)
+                .Select(u => new
+                {
+                    u.Id,
+                    u.Nombres,
+                    u.Apellidos,
+                    u.Email,
+                    u.PuntajeTotal,
+                    u.IdNivel,
+                    NivelNombre = u.Nivel != null ? u.Nivel.Nombre : "Sin nivel",
+                    MedallasCount = _context.MedallaEstudiante.Count(me => me.IdEstudiante == u.Id)
+                })
+                .ToListAsync();
+
+            return View(estudiantes);
+        }
+
+        // Calificación con Patrones
+        public async Task<IActionResult> CalificarActividades()
+        {
+            await CargarDatosDocente();
+
+            var docenteId = _userManager.GetUserId(User);
+
+            var cursosDelDocente = await _context.CursoDocente
+                .Where(cd => cd.IdDocente == docenteId)
+                .Select(cd => cd.IdCurso)
+                .ToListAsync();
+
+            var actividadesEntregadas = await _context.ActividadEstudiante
+                .Include(ae => ae.Actividad)
+                .ThenInclude(a => a.Curso)
+                .Include(ae => ae.Estudiante)
+                .Where(ae => ae.PuntajeObtenido == null && cursosDelDocente.Contains(ae.Actividad.IdCurso))
+                .OrderByDescending(ae => ae.FechaEntrega)
+                .ToListAsync();
+
+            return View(actividadesEntregadas);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Calificar(int idActividadEstudiante, int puntajeObtenido, string estrategiaCalificacion = "estandar")
+        {
+            var actividadEstudiante = await _context.ActividadEstudiante
+                .Include(ae => ae.Actividad)
+                .Include(ae => ae.Estudiante)
+                .FirstOrDefaultAsync(ae => ae.IdActividadEstudiante == idActividadEstudiante);
+
+            if (actividadEstudiante == null)
+            {
+                TempData["Error"] = "Actividad no encontrada";
+                return RedirectToAction(nameof(CalificarActividades));
+            }
+
+            if (puntajeObtenido < 0 || puntajeObtenido > actividadEstudiante.Actividad.Puntaje)
+            {
+                TempData["Error"] = $"El puntaje debe estar entre 0 y {actividadEstudiante.Actividad.Puntaje}";
+                return RedirectToAction(nameof(CalificarActividades));
+            }
+
+            // Patrón FACTORY METHOD
+            var strategy = _strategyFactory.CrearEstrategia(estrategiaCalificacion);
+
+            // Patrón CONTROLLER
+            var controladorCalificacion = new CalificacionBusinessController(
+                strategy,
+                new Services.Observers.CalificacionNotifier());
+
+            var resultado = controladorCalificacion.ProcesarCalificacion(
+                actividadEstudiante,
+                puntajeObtenido,
+                actividadEstudiante.Actividad.FechaLimite);
+
+            // Patrón HIGH COHESION
+            var actualizacion = await _gamificacionService.ActualizarPuntajeYNivel(
+                actividadEstudiante.IdEstudiante,
+                resultado.PuntajeFinal);
+
+            var incentivos = await _gamificacionService.OtorgarIncentivosAutomaticos(
+                actividadEstudiante.IdEstudiante);
+
+            await _context.SaveChangesAsync();
+
+            var mensajeExito = $"? {resultado.Mensaje}";
+
+            if (actualizacion.CambioDeNivel)
+            {
+                mensajeExito += $" | ?? {actualizacion.ObtenerMensaje()}";
+            }
+
+            if (incentivos.Any())
+            {
+                mensajeExito += $" | ?? Incentivos obtenidos: {string.Join(", ", incentivos)}";
+            }
+
+            TempData["Success"] = mensajeExito;
+            return RedirectToAction(nameof(CalificarActividades));
+        }
+
+        public IActionResult VistaDocumento(string url)
+        {
+            if (string.IsNullOrEmpty(url))
+            {
+                TempData["Error"] = "URL de documento no válida";
+                return RedirectToAction(nameof(CalificarActividades));
+            }
+
+            return View((object)url);
         }
     }
 }

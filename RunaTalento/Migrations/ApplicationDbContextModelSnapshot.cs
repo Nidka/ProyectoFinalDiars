@@ -184,6 +184,10 @@ namespace RunaTalento.Migrations
                     b.Property<int>("IdCurso")
                         .HasColumnType("int");
 
+                    b.Property<string>("NivelDificultad")
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
                     b.Property<int>("Puntaje")
                         .HasColumnType("int");
 

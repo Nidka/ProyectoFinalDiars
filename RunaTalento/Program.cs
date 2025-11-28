@@ -3,6 +3,12 @@ using Microsoft.EntityFrameworkCore;
 using RunaTalento.Data;
 using RunaTalento.Models;
 using RunaTalento.Middleware;
+// ✅ IMPORTAR SERVICIOS DE PATRONES
+using RunaTalento.Services.Factories;
+using RunaTalento.Services.Strategies;
+using RunaTalento.Services.Observers;
+using RunaTalento.Services.Controllers;
+using RunaTalento.Services.GamificacionService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,6 +47,23 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
     options.Cookie.SameSite = SameSiteMode.Strict;
 });
+
+// ✅ REGISTRAR PATRONES - FACTORY METHOD (GoF)
+builder.Services.AddScoped<ICalificacionStrategyFactory, CalificacionStrategyFactory>();
+
+// ✅ REGISTRAR PATRONES - STRATEGY (GoF) - Por defecto usa estrategia estándar
+builder.Services.AddScoped<ICalificacionStrategy>(provider => 
+    new CalificacionEstandarStrategy());
+
+// ✅ REGISTRAR PATRONES - OBSERVER (GoF)
+builder.Services.AddSingleton<CalificacionNotifier>();
+builder.Services.AddScoped<ICalificacionObserver, LogCalificacionObserver>();
+
+// ✅ REGISTRAR PATRONES - CONTROLLER (GRASP)
+builder.Services.AddScoped<CalificacionBusinessController>();
+
+// ✅ REGISTRAR PATRONES - HIGH COHESION (GRASP)
+builder.Services.AddScoped<GamificacionService>();
 
 // Agregar soporte para Razor Pages (necesario para Identity UI)
 builder.Services.AddRazorPages();

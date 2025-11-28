@@ -8007,23 +8007,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\maki-\\.nuget\\packages\\": {},
+    "C:\\Users\\Piero\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\RunaTalento.csproj",
+      "projectUniqueName": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\RunaTalento.csproj",
       "projectName": "RunaTalento",
-      "projectPath": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\RunaTalento.csproj",
-      "packagesPath": "C:\\Users\\maki-\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\maki-\\Downloads\\Tareas\\robotica\\FINALDIARSITO\\RunaTalento\\obj\\",
+      "projectPath": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\RunaTalento.csproj",
+      "packagesPath": "C:\\Users\\Piero\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\maki-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Piero\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8099,7 +8099,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

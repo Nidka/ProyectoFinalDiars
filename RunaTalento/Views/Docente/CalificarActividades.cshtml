@@ -11,6 +11,16 @@
     </div>
     <p class="card-subtitle">Revisa y califica las actividades entregadas por tus estudiantes</p>
 
+    @* ? MOSTRAR INFORMACIÓN SOBRE ESTRATEGIAS DE CALIFICACIÓN *@
+    <div class="alert alert-info mb-3">
+        <h6><i class="bi bi-info-circle"></i> Estrategias de Calificación </h6>
+        <ul class="mb-0 small">
+            <li><strong>Estándar:</strong> Puntaje sin modificaciones</li>
+            <li><strong>Bonificación:</strong> +10% si se entregó antes de la fecha límite</li>
+            <li><strong>Penalización:</strong> -20% si se entregó después de la fecha límite</li>
+        </ul>
+    </div>
+
     @if (Model != null && Model.Any())
     {
         <div class="table-responsive">
@@ -112,20 +122,32 @@
                                 </span>
                             </td>
                             <td>
-                                <form asp-action="Calificar" method="post" class="d-flex align-items-center gap-2">
+                                
+                                <form asp-action="Calificar" method="post" class="d-flex flex-column gap-2">
                                     @Html.AntiForgeryToken()
                                     <input type="hidden" name="idActividadEstudiante" value="@item.IdActividadEstudiante" />
-                                    <input type="number"
-                                           name="puntajeObtenido"
-                                           class="form-control form-control-sm"
-                                           style="width: 80px;"
-                                           min="0"
-                                           max="@item.Actividad?.Puntaje"
-                                           placeholder="0-@item.Actividad?.Puntaje"
-                                           required />
-                                    <button type="submit" class="btn btn-sm btn-primary-custom">
-                                        <i class="bi bi-check-circle-fill"></i> Calificar
-                                    </button>
+                                    
+                                    <div class="d-flex align-items-center gap-2">
+                                        <input type="number"
+                                               name="puntajeObtenido"
+                                               class="form-control form-control-sm"
+                                               style="width: 80px;"
+                                               min="0"
+                                               max="@item.Actividad?.Puntaje"
+                                               placeholder="0-@item.Actividad?.Puntaje"
+                                               required />
+                                        
+                                        <button type="submit" class="btn btn-sm btn-primary-custom">
+                                            <i class="bi bi-check-circle-fill"></i> Calificar
+                                        </button>
+                                    </div>
+
+                                    @* ? SELECTOR DE ESTRATEGIA *@
+                                    <select name="estrategiaCalificacion" class="form-select form-select-sm" style="font-size: 0.8rem;">
+                                        <option value="estandar" selected>?? Estándar</option>
+                                        <option value="bonificacion">?? Con Bonificación (+10%)</option>
+                                        <option value="penalizacion">?? Con Penalización (-20%)</option>
+                                    </select>
                                 </form>
                             </td>
                         </tr>

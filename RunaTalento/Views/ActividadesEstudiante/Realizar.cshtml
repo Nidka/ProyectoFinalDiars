@@ -15,7 +15,9 @@
             <div class="card-body p-4">
                 <!-- Información de la actividad -->
                 <div class="mb-4">
-                    <h4 class="text-purple">@Model.Titulo</h4>
+                    @* ? PATRÓN DECORATOR - Mostrar título con modificadores *@
+                    <h4 class="text-purple">@Model.DescripcionConModificadores</h4>
+                    
                     <p class="text-muted mb-2">
                         <i class="bi bi-book"></i> <strong>Curso:</strong> @Model.Curso?.Nombre
                     </p>
@@ -29,10 +31,33 @@
                     </p>
                 </div>
 
-                <div class="alert alert-info">
-                    <i class="bi bi-info-circle-fill"></i>
-                    <strong>Puntaje:</strong> Al completar esta actividad ganarás <strong>@Model.Puntaje puntos</strong>.
-                </div>
+                @* ? PATRÓN DECORATOR - Mostrar puntaje con modificadores *@
+                @if (Model.PuntajeConModificadores > Model.Puntaje)
+                {
+                    <div class="alert alert-success">
+                        <i class="bi bi-trophy-fill"></i>
+                        <strong>Puntaje Especial:</strong> Esta actividad otorga 
+                        <strong class="text-decoration-line-through">@Model.Puntaje</strong> 
+                        <strong class="fs-5">@Model.PuntajeConModificadores puntos</strong>
+                        
+                        @if (Model.EsUrgente)
+                        {
+                            <br/><small>? Bonificación por urgencia: +15%</small>
+                        }
+                        @if (!string.IsNullOrEmpty(Model.NivelDificultad) && Model.NivelDificultad != "normal")
+                        {
+                            <br/><small>?? Bonificación por dificultad (@Model.NivelDificultad): 
+                            @(Model.NivelDificultad == "dificil" ? "+20%" : "+35%")</small>
+                        }
+                    </div>
+                }
+                else
+                {
+                    <div class="alert alert-info">
+                        <i class="bi bi-info-circle-fill"></i>
+                        <strong>Puntaje:</strong> Al completar esta actividad ganarás <strong>@Model.Puntaje puntos</strong>.
+                    </div>
+                }
 
                 <!-- Descripción -->
                 <div class="mb-4">
@@ -41,6 +66,38 @@
                         @(Model.Descripcion ?? "No hay descripción disponible para esta actividad.")
                     </div>
                 </div>
+
+                @* ? Mostrar fecha límite si existe *@
+                @if (Model.FechaLimite.HasValue)
+                {
+                    var diasRestantes = (Model.FechaLimite.Value - DateTime.Now).TotalDays;
+                    var horasRestantes = (Model.FechaLimite.Value - DateTime.Now).TotalHours;
+                    
+                    <div class="alert @(Model.EsUrgente ? "alert-warning" : "alert-secondary")">
+                        <i class="bi bi-clock-history"></i>
+                        <strong>Fecha límite:</strong> @Model.FechaLimite.Value.ToString("dd/MM/yyyy HH:mm")
+                        
+                        @if (!Model.EstaVencida)
+                        {
+                            @if (diasRestantes >= 1)
+                            {
+                                <span> - Quedan <strong>@((int)diasRestantes) días</strong></span>
+                            }
+                            else if (horasRestantes >= 1)
+                            {
+                                <span> - Quedan <strong>@((int)horasRestantes) horas</strong> ??</span>
+                            }
+                            else
+                            {
+                                <span> - <strong class="text-danger">¡Menos de 1 hora!</strong> ??</span>
+                            }
+                        }
+                        else
+                        {
+                            <span class="text-danger"> - <strong>VENCIDA</strong></span>
+                        }
+                    </div>
+                }
 
                 <!-- Archivo adjunto del docente (si existe) -->
                 @if (!string.IsNullOrEmpty(Model.ArchivoUrl))

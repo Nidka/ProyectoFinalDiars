@@ -1,6 +1,7 @@
 wwwroot\css\admin.css
 wwwroot\css\docente.css
 wwwroot\css\estudiante.css
+wwwroot\css\footer.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\login.jpg
@@ -69,8 +70,8 @@ wwwroot\uploads\actividades\673ed9a6-3ea8-48d0-bbe4-a48eb6e9cefb_6_2025112014231
 wwwroot\uploads\actividades\6d249bd6-1b21-41a7-b9e1-ac2cf47c696a_6_20251120130317.docx
 wwwroot\uploads\actividades\a3d7faf5-f639-4b4d-867e-0ff5323499cf_4_20251120132358.pdf
 wwwroot\uploads\actividades\ceb55931-a818-4607-b5dd-0a5fccaf4c80_7_20251120191227.pdf
+wwwroot\uploads\actividades\decb9e74-22b9-4130-96d1-5d45cfb7df93_10_20251121111425.png
 wwwroot\uploads\actividades\decb9e74-22b9-4130-96d1-5d45cfb7df93_1_20251120202314.pdf
 wwwroot\uploads\actividades\decb9e74-22b9-4130-96d1-5d45cfb7df93_7_20251120204943.pdf
 wwwroot\uploads\actividades\decb9e74-22b9-4130-96d1-5d45cfb7df93_8_20251120202409.pdf
 wwwroot\uploads\actividades\decb9e74-22b9-4130-96d1-5d45cfb7df93_9_20251120203825.pdf
-wwwroot\css\footer.css

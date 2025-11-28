@@ -5,6 +5,7 @@ namespace RunaTalento.Models
 {
     /// <summary>
     /// Representa una actividad o tarea en un curso
+    /// Puede ser decorada con modificadores de dificultad y urgencia (Patrón DECORATOR)
     /// </summary>
     public class Actividad
     {
@@ -33,9 +34,17 @@ namespace RunaTalento.Models
         [Required(ErrorMessage = "El curso es obligatorio")]
         public int IdCurso { get; set; }
 
-        //  guarda la ruta del archivo subido
+        // Guarda la ruta del archivo subido
         [StringLength(255)]
         public string? ArchivoUrl { get; set; }
+
+        // Patrón DECORATOR - Modificadores de actividad
+        /// <summary>
+        /// Nivel de dificultad: "normal", "dificil", "muy_dificil"
+        /// Usado por ActividadDificultadDecorator
+        /// </summary>
+        [StringLength(20)]
+        public string? NivelDificultad { get; set; } = "normal";
 
         // Navegación hacia el curso
         [ForeignKey("IdCurso")]
@@ -55,5 +64,80 @@ namespace RunaTalento.Models
         /// </summary>
         [NotMapped]
         public bool EstaVigente => !FechaLimite.HasValue || DateTime.Now <= FechaLimite.Value;
+
+        /// <summary>
+        /// Indica si la actividad es considerada urgente (fecha límite cercana)
+        /// Usado por ActividadUrgenciaDecorator
+        /// </summary>
+        [NotMapped]
+        public bool EsUrgente => FechaLimite.HasValue && 
+                                (FechaLimite.Value - DateTime.Now).TotalDays <= 2 &&
+                                FechaLimite.Value > DateTime.Now;
+
+        /// <summary>
+        /// Obtiene el puntaje con modificadores aplicados (Patrón DECORATOR)
+        /// </summary>
+        [NotMapped]
+        public int PuntajeConModificadores
+        {
+            get
+            {
+                var puntaje = Puntaje;
+
+                // Bonificación por dificultad
+                if (!string.IsNullOrEmpty(NivelDificultad))
+                {
+                    puntaje = NivelDificultad.ToLower() switch
+                    {
+                        "dificil" => (int)(puntaje * 1.20),      // +20%
+                        "muy_dificil" => (int)(puntaje * 1.35),  // +35%
+                        _ => puntaje
+                    };
+                }
+
+                // Bonificación por urgencia
+                if (EsUrgente)
+                {
+                    puntaje = (int)(puntaje * 1.15); // +15%
+                }
+
+                return puntaje;
+            }
+        }
+
+        /// <summary>
+        /// Obtiene una descripción detallada con modificadores (Patrón DECORATOR)
+        /// </summary>
+        [NotMapped]
+        public string DescripcionConModificadores
+        {
+            get
+            {
+                var descripcion = Titulo;
+                var modificadores = new List<string>();
+
+                if (EsUrgente)
+                {
+                    modificadores.Add("? URGENTE");
+                }
+
+                if (!string.IsNullOrEmpty(NivelDificultad) && NivelDificultad.ToLower() != "normal")
+                {
+                    modificadores.Add(NivelDificultad.ToLower() switch
+                    {
+                        "dificil" => "?? DIFÍCIL",
+                        "muy_dificil" => "???? MUY DIFÍCIL",
+                        _ => ""
+                    });
+                }
+
+                if (modificadores.Any())
+                {
+                    descripcion = $"{string.Join(" ", modificadores)} - {descripcion}";
+                }
+
+                return descripcion;
+            }
+        }
     }
 }
