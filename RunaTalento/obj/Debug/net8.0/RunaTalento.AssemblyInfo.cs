@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RunaTalento")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c2d264ed983b262ce34bf6b502572362144b5be")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d22f1a223352855309698463a1e504ec04039975")]
 [assembly: System.Reflection.AssemblyProductAttribute("RunaTalento")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RunaTalento")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

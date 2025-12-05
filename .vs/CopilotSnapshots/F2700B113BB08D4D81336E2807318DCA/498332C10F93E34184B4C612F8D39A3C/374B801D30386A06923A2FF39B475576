@@ -1,0 +1,80 @@
+﻿using Microsoft.EntityFrameworkCore.Migrations;
+
+#nullable disable
+
+namespace RunaTalento.Migrations
+{
+    /// <inheritdoc />
+    public partial class AgregarColumnasArchivos : Migration
+    {
+        /// <inheritdoc />
+        protected override void Up(MigrationBuilder migrationBuilder)
+        {
+   // Agregar columna ArchivoUrl a la tabla Actividad
+          migrationBuilder.AddColumn<string>(
+    name: "ArchivoUrl",
+            table: "Actividad",
+   type: "nvarchar(255)",
+       maxLength: 255,
+ nullable: true);
+
+            // Agregar columna UrlDocumento a la tabla ActividadEstudiante
+            migrationBuilder.AddColumn<string>(
+      name: "UrlDocumento",
+  table: "ActividadEstudiante",
+   type: "nvarchar(max)",
+nullable: true);
+
+            // Agregar columna IdDocente a la tabla MedallaEstudiante
+      migrationBuilder.AddColumn<string>(
+         name: "IdDocente",
+         table: "MedallaEstudiante",
+ type: "nvarchar(450)",
+    nullable: true);
+
+   // Crear índice para IdDocente en MedallaEstudiante
+migrationBuilder.CreateIndex(
+name: "IX_MedallaEstudiante_IdDocente",
+          table: "MedallaEstudiante",
+        column: "IdDocente");
+
+    // Agregar clave foránea para IdDocente
+            migrationBuilder.AddForeignKey(
+                name: "FK_MedallaEstudiante_AspNetUsers_IdDocente",
+         table: "MedallaEstudiante",
+     column: "IdDocente",
+          principalTable: "AspNetUsers",
+    principalColumn: "Id");
+        }
+
+     /// <inheritdoc />
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+         // Eliminar clave foránea
+   migrationBuilder.DropForeignKey(
+         name: "FK_MedallaEstudiante_AspNetUsers_IdDocente",
+      table: "MedallaEstudiante");
+
+         // Eliminar índice
+migrationBuilder.DropIndex(
+  name: "IX_MedallaEstudiante_IdDocente",
+                table: "MedallaEstudiante");
+
+            // Eliminar columna IdDocente de la tabla MedallaEstudiante
+       migrationBuilder.DropColumn(
+       name: "IdDocente",
+       table: "MedallaEstudiante");
+
+            // Eliminar columna ArchivoUrl de la tabla Actividad
+            migrationBuilder.DropColumn(
+    name: "ArchivoUrl",
+       table: "Actividad");
+
+          // Eliminar columna UrlDocumento de la tabla ActividadEstudiante
+            migrationBuilder.DropColumn(
+        name: "UrlDocumento",
+     table: "ActividadEstudiante");
+   }
+    }
+}
+

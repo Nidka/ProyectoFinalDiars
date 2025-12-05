@@ -1,0 +1,259 @@
+﻿-- Script COMPLETO para agregar todas las columnas y tablas faltantes
+-- Ejecuta este script en tu base de datos RunaTalentoDB
+
+USE RunaTalentoDB;
+GO
+
+-- ==================== CREAR TABLAS FALTANTES ====================
+
+-- Crear tabla Incentivo si no existe
+IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'Incentivo')
+BEGIN
+    CREATE TABLE [dbo].[Incentivo] (
+        [IdIncentivo] INT IDENTITY(1,1) NOT NULL,
+        [Nombre] NVARCHAR(100) NOT NULL,
+        [Descripcion] NVARCHAR(500) NULL,
+        [PuntosRequeridos] INT NOT NULL,
+        [IconoUrl] NVARCHAR(500) NULL,
+[Activo] BIT NOT NULL DEFAULT 1,
+   [FechaCreacion] DATETIME2 NOT NULL DEFAULT GETDATE(),
+        CONSTRAINT [PK_Incentivo] PRIMARY KEY ([IdIncentivo])
+    );
+    PRINT 'Tabla Incentivo creada';
+END
+ELSE
+BEGIN
+    PRINT 'La tabla Incentivo ya existe';
+END
+GO
+
+-- Crear tabla IncentivoEstudiante si no existe
+IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'IncentivoEstudiante')
+BEGIN
+    CREATE TABLE [dbo].[IncentivoEstudiante] (
+   [IdIncentivoEstudiante] INT IDENTITY(1,1) NOT NULL,
+   [IdIncentivo] INT NOT NULL,
+   [IdEstudiante] NVARCHAR(450) NOT NULL,
+        [FechaOtorgado] DATETIME2 NOT NULL DEFAULT GETDATE(),
+        [PuntajeAlObtener] INT NOT NULL DEFAULT 0,
+        CONSTRAINT [PK_IncentivoEstudiante] PRIMARY KEY ([IdIncentivoEstudiante]),
+        CONSTRAINT [FK_IncentivoEstudiante_Incentivo] FOREIGN KEY ([IdIncentivo]) 
+ REFERENCES [dbo].[Incentivo] ([IdIncentivo]) ON DELETE CASCADE,
+     CONSTRAINT [FK_IncentivoEstudiante_AspNetUsers] FOREIGN KEY ([IdEstudiante]) 
+            REFERENCES [dbo].[AspNetUsers] ([Id]) ON DELETE CASCADE
+    );
+    
+    CREATE NONCLUSTERED INDEX [IX_IncentivoEstudiante_IdEstudiante]
+     ON [dbo].[IncentivoEstudiante] ([IdEstudiante]);
+    
+    CREATE UNIQUE NONCLUSTERED INDEX [IX_IncentivoEstudiante_IdIncentivo_IdEstudiante]
+        ON [dbo].[IncentivoEstudiante] ([IdIncentivo], [IdEstudiante]);
+  
+    PRINT 'Tabla IncentivoEstudiante creada';
+END
+ELSE
+BEGIN
+    PRINT 'La tabla IncentivoEstudiante ya existe';
+END
+GO
+
+-- Crear tabla CursoDocente si no existe
+IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'CursoDocente')
+BEGIN
+    CREATE TABLE [dbo].[CursoDocente] (
+        [IdCursoDocente] INT IDENTITY(1,1) NOT NULL,
+    [IdCurso] INT NOT NULL,
+        [IdDocente] NVARCHAR(450) NOT NULL,
+        [FechaAsignacion] DATETIME2 NOT NULL DEFAULT GETDATE(),
+        CONSTRAINT [PK_CursoDocente] PRIMARY KEY ([IdCursoDocente]),
+        CONSTRAINT [FK_CursoDocente_Curso] FOREIGN KEY ([IdCurso]) 
+            REFERENCES [dbo].[Curso] ([IdCurso]) ON DELETE CASCADE,
+   CONSTRAINT [FK_CursoDocente_AspNetUsers] FOREIGN KEY ([IdDocente]) 
+         REFERENCES [dbo].[AspNetUsers] ([Id]) ON DELETE CASCADE
+    );
+    
+    CREATE NONCLUSTERED INDEX [IX_CursoDocente_IdDocente]
+        ON [dbo].[CursoDocente] ([IdDocente]);
+    
+    CREATE UNIQUE NONCLUSTERED INDEX [IX_CursoDocente_IdCurso_IdDocente]
+        ON [dbo].[CursoDocente] ([IdCurso], [IdDocente]);
+    
+    PRINT 'Tabla CursoDocente creada';
+END
+ELSE
+BEGIN
+    PRINT 'La tabla CursoDocente ya existe';
+END
+GO
+
+-- ==================== AGREGAR COLUMNAS FALTANTES ====================
+
+-- Verificar y agregar columna ArchivoUrl a la tabla Actividad
+IF NOT EXISTS (
+    SELECT * FROM sys.columns 
+    WHERE object_id = OBJECT_ID(N'[dbo].[Actividad]') 
+    AND name = 'ArchivoUrl'
+)
+BEGIN
+    ALTER TABLE [dbo].[Actividad]
+    ADD [ArchivoUrl] NVARCHAR(255) NULL;
+    PRINT 'Columna ArchivoUrl agregada a la tabla Actividad';
+END
+ELSE
+BEGIN
+    PRINT 'La columna ArchivoUrl ya existe en la tabla Actividad';
+END
+GO
+
+-- Verificar y agregar columna FechaLimite a la tabla Actividad
+IF NOT EXISTS (
+    SELECT * FROM sys.columns 
+    WHERE object_id = OBJECT_ID(N'[dbo].[Actividad]') 
+    AND name = 'FechaLimite'
+)
+BEGIN
+  ALTER TABLE [dbo].[Actividad]
+    ADD [FechaLimite] DATETIME2 NULL;
+    PRINT 'Columna FechaLimite agregada a la tabla Actividad';
+END
+ELSE
+BEGIN
+    PRINT 'La columna FechaLimite ya existe en la tabla Actividad';
+END
+GO
+
+-- Verificar y agregar columna NivelDificultad a la tabla Actividad
+IF NOT EXISTS (
+    SELECT * FROM sys.columns 
+    WHERE object_id = OBJECT_ID(N'[dbo].[Actividad]') 
+    AND name = 'NivelDificultad'
+)
+BEGIN
+    ALTER TABLE [dbo].[Actividad]
+    ADD [NivelDificultad] NVARCHAR(20) NULL DEFAULT 'normal';
+  PRINT 'Columna NivelDificultad agregada a la tabla Actividad';
+END
+ELSE
+BEGIN
+    PRINT 'La columna NivelDificultad ya existe en la tabla Actividad';
+END
+GO
+
+-- Verificar y agregar columna UrlDocumento a la tabla ActividadEstudiante
+IF NOT EXISTS (
+    SELECT * FROM sys.columns 
+    WHERE object_id = OBJECT_ID(N'[dbo].[ActividadEstudiante]') 
+    AND name = 'UrlDocumento'
+)
+BEGIN
+    ALTER TABLE [dbo].[ActividadEstudiante]
+  ADD [UrlDocumento] NVARCHAR(MAX) NULL;
+    PRINT 'Columna UrlDocumento agregada a la tabla ActividadEstudiante';
+END
+ELSE
+BEGIN
+    PRINT 'La columna UrlDocumento ya existe en la tabla ActividadEstudiante';
+END
+GO
+
+-- Verificar y agregar columna IdDocente a la tabla MedallaEstudiante
+IF NOT EXISTS (
+    SELECT * FROM sys.columns 
+    WHERE object_id = OBJECT_ID(N'[dbo].[MedallaEstudiante]') 
+    AND name = 'IdDocente'
+)
+BEGIN
+    ALTER TABLE [dbo].[MedallaEstudiante]
+    ADD [IdDocente] NVARCHAR(450) NULL;
+    PRINT 'Columna IdDocente agregada a la tabla MedallaEstudiante';
+  
+    -- Agregar clave foránea hacia AspNetUsers (Docente)
+    ALTER TABLE [dbo].[MedallaEstudiante]
+    ADD CONSTRAINT [FK_MedallaEstudiante_AspNetUsers_IdDocente]
+    FOREIGN KEY ([IdDocente]) REFERENCES [dbo].[AspNetUsers] ([Id])
+ ON DELETE NO ACTION;
+    PRINT 'Clave foránea FK_MedallaEstudiante_AspNetUsers_IdDocente creada';
+    
+    -- Crear índice para mejorar rendimiento
+    CREATE NONCLUSTERED INDEX [IX_MedallaEstudiante_IdDocente]
+ ON [dbo].[MedallaEstudiante] ([IdDocente]);
+    PRINT 'Índice IX_MedallaEstudiante_IdDocente creado';
+END
+ELSE
+BEGIN
+    PRINT 'La columna IdDocente ya existe en la tabla MedallaEstudiante';
+END
+GO
+
+-- Modificar columna IdDocente en tabla Curso para permitir NULL
+IF EXISTS (
+    SELECT * FROM sys.columns 
+    WHERE object_id = OBJECT_ID(N'[dbo].[Curso]') 
+    AND name = 'IdDocente'
+    AND is_nullable = 0
+)
+BEGIN
+    -- Primero eliminar la clave foránea existente
+    IF EXISTS (SELECT * FROM sys.foreign_keys WHERE name = 'FK_Curso_AspNetUsers_IdDocente')
+    BEGIN
+        ALTER TABLE [dbo].[Curso] DROP CONSTRAINT [FK_Curso_AspNetUsers_IdDocente];
+    END
+    
+    -- Modificar la columna para permitir NULL
+    ALTER TABLE [dbo].[Curso]
+    ALTER COLUMN [IdDocente] NVARCHAR(450) NULL;
+    
+    -- Recrear la clave foránea con ON DELETE SET NULL
+    ALTER TABLE [dbo].[Curso]
+    ADD CONSTRAINT [FK_Curso_AspNetUsers_IdDocente]
+    FOREIGN KEY ([IdDocente]) REFERENCES [dbo].[AspNetUsers] ([Id])
+    ON DELETE SET NULL;
+    
+  PRINT 'Columna IdDocente en Curso modificada para permitir NULL';
+END
+ELSE
+BEGIN
+ PRINT 'La columna IdDocente en Curso ya permite NULL';
+END
+GO
+
+-- ==================== REGISTRAR MIGRACIONES ====================
+
+-- Registrar la migración en __EFMigrationsHistory
+IF NOT EXISTS (
+    SELECT * FROM [dbo].[__EFMigrationsHistory]
+    WHERE [MigrationId] = N'20251201000000_AgregarColumnasArchivos'
+)
+BEGIN
+    INSERT INTO [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20251201000000_AgregarColumnasArchivos', N'8.0.11');
+    PRINT 'Migración 20251201000000_AgregarColumnasArchivos registrada';
+END
+GO
+
+IF NOT EXISTS (
+    SELECT * FROM [dbo].[__EFMigrationsHistory]
+    WHERE [MigrationId] = N'20251121000009_AgregarFechaLimiteActividad'
+)
+BEGIN
+    INSERT INTO [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+    VALUES (N'20251121000009_AgregarFechaLimiteActividad', N'8.0.11');
+    PRINT 'Migración 20251121000009_AgregarFechaLimiteActividad registrada';
+END
+GO
+
+IF NOT EXISTS (
+    SELECT * FROM [dbo].[__EFMigrationsHistory]
+    WHERE [MigrationId] = N'20251128021435_AgregarNivelDificultadActividad'
+)
+BEGIN
+    INSERT INTO [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+    VALUES (N'20251128021435_AgregarNivelDificultadActividad', N'8.0.11');
+    PRINT 'Migración 20251128021435_AgregarNivelDificultadActividad registrada';
+END
+GO
+
+PRINT '========================================';
+PRINT 'Script ejecutado exitosamente.';
+PRINT 'Todas las tablas y columnas han sido agregadas.';
+PRINT '========================================';

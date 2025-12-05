@@ -1,114 +1,74 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\",
+  "WorkspaceRootPath": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\piero\\desktop\\diars (1)\\proyectofinaldiars\\runatalento\\especificacion_casos_uso.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
-      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\especificacion_casos_uso.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\evelyn victoria\\downloads\\proyectofinaldiars\\runatalento\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\piero\\desktop\\diars (1)\\proyectofinaldiars\\runatalento\\limpieza_comentarios.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
-      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\limpieza_comentarios.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\piero\\desktop\\diars (1)\\proyectofinaldiars\\runatalento\\guia_de_uso.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\guia_de_uso.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\piero\\desktop\\diars (1)\\proyectofinaldiars\\runatalento\\services\\strategies\\icalificacionstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\strategies\\icalificacionstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Diagramas\\01_Diagrama_General_Casos_Uso.puml||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RunaTalento\\Diagramas\\01_Diagrama_General_Casos_Uso.puml||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Diagramas\\02_Diagrama_Calificar_Detallado.puml||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RunaTalento\\Diagramas\\02_Diagrama_Calificar_Detallado.puml||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Diagramas\\03_Diagrama_Flujo_Gamificacion.puml||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RunaTalento\\Diagramas\\03_Diagrama_Flujo_Gamificacion.puml||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\piero\\desktop\\diars (1)\\proyectofinaldiars\\runatalento\\services\\strategies\\calificacionestandarstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\strategies\\calificacionestandarstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\piero\\desktop\\diars (1)\\proyectofinaldiars\\runatalento\\services\\strategies\\calificacionconbonificacionstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\strategies\\calificacionconbonificacionstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\piero\\desktop\\diars (1)\\proyectofinaldiars\\runatalento\\services\\strategies\\calificacionconpenalizacionstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\strategies\\calificacionconpenalizacionstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\piero\\desktop\\diars (1)\\proyectofinaldiars\\runatalento\\services\\factories\\calificacionstrategyfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\factories\\calificacionstrategyfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\piero\\desktop\\diars (1)\\proyectofinaldiars\\runatalento\\services\\observers\\icalificacionobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\observers\\icalificacionobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\piero\\desktop\\diars (1)\\proyectofinaldiars\\runatalento\\services\\observers\\calificacionnotifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\observers\\calificacionnotifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\piero\\desktop\\diars (1)\\proyectofinaldiars\\runatalento\\services\\observers\\logcalificacionobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\observers\\logcalificacionobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\piero\\desktop\\diars (1)\\proyectofinaldiars\\runatalento\\services\\decorators\\iactividadcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\decorators\\iactividadcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\piero\\desktop\\diars (1)\\proyectofinaldiars\\runatalento\\services\\decorators\\actividadbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\decorators\\actividadbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\piero\\desktop\\diars (1)\\proyectofinaldiars\\runatalento\\services\\decorators\\actividaddecorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\decorators\\actividaddecorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\piero\\desktop\\diars (1)\\proyectofinaldiars\\runatalento\\services\\decorators\\actividadurgenciadecorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\decorators\\actividadurgenciadecorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\piero\\desktop\\diars (1)\\proyectofinaldiars\\runatalento\\services\\decorators\\actividaddificultaddecorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\decorators\\actividaddificultaddecorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\piero\\desktop\\diars (1)\\proyectofinaldiars\\runatalento\\services\\controllers\\calificacionbusinesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\controllers\\calificacionbusinesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\piero\\desktop\\diars (1)\\proyectofinaldiars\\runatalento\\services\\gamificacionservice\\gamificacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\evelyn victoria\\downloads\\proyectofinaldiars\\runatalento\\services\\gamificacionservice\\gamificacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\gamificacionservice\\gamificacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\piero\\desktop\\diars (1)\\proyectofinaldiars\\runatalento\\models\\actividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\models\\actividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\evelyn victoria\\downloads\\proyectofinaldiars\\runatalento\\services\\strategies\\calificacionconbonificacionstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\strategies\\calificacionconbonificacionstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\piero\\desktop\\diars (1)\\proyectofinaldiars\\runatalento\\controllers\\docentecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\evelyn victoria\\downloads\\proyectofinaldiars\\runatalento\\services\\strategies\\calificacionconpenalizacionstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\strategies\\calificacionconpenalizacionstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\evelyn victoria\\downloads\\proyectofinaldiars\\runatalento\\services\\factories\\calificacionstrategyfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\factories\\calificacionstrategyfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\evelyn victoria\\downloads\\proyectofinaldiars\\runatalento\\services\\observers\\icalificacionobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\observers\\icalificacionobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\evelyn victoria\\downloads\\proyectofinaldiars\\runatalento\\services\\observers\\calificacionnotifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\observers\\calificacionnotifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\evelyn victoria\\downloads\\proyectofinaldiars\\runatalento\\services\\observers\\logcalificacionobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\observers\\logcalificacionobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\evelyn victoria\\downloads\\proyectofinaldiars\\runatalento\\services\\decorators\\iactividadcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\decorators\\iactividadcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\evelyn victoria\\downloads\\proyectofinaldiars\\runatalento\\services\\decorators\\actividadbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\decorators\\actividadbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\evelyn victoria\\downloads\\proyectofinaldiars\\runatalento\\services\\decorators\\actividaddecorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\decorators\\actividaddecorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\evelyn victoria\\downloads\\proyectofinaldiars\\runatalento\\services\\decorators\\actividadurgenciadecorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\decorators\\actividadurgenciadecorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\evelyn victoria\\downloads\\proyectofinaldiars\\runatalento\\services\\decorators\\actividaddificultaddecorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\decorators\\actividaddificultaddecorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\evelyn victoria\\downloads\\proyectofinaldiars\\runatalento\\services\\controllers\\calificacionbusinesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\services\\controllers\\calificacionbusinesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\evelyn victoria\\downloads\\proyectofinaldiars\\runatalento\\controllers\\docentecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\controllers\\docentecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\piero\\desktop\\diars (1)\\proyectofinaldiars\\runatalento\\resumen_refactorizacion.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
-      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\resumen_refactorizacion.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\evelyn victoria\\downloads\\proyectofinaldiars\\runatalento\\migrations\\aplicarcolumnasarchivos.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\migrations\\aplicarcolumnasarchivos.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\piero\\desktop\\diars (1)\\proyectofinaldiars\\runatalento\\diagramas_casos_uso.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
-      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\diagramas_casos_uso.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\piero\\desktop\\diars (1)\\proyectofinaldiars\\runatalento\\indice_documentacion.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
-      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\indice_documentacion.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\piero\\desktop\\diars (1)\\proyectofinaldiars\\runatalento\\documentacion_completada.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
-      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\documentacion_completada.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+      "AbsoluteMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|c:\\users\\evelyn victoria\\downloads\\proyectofinaldiars\\runatalento\\migrations\\20251201000000_agregarcolumnasarchivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17CC08BE-83E7-4427-9BA9-1A20BD8CDDD2}|RunaTalento\\RunaTalento.csproj|solutionrelative:runatalento\\migrations\\20251201000000_agregarcolumnasarchivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -118,355 +78,219 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "DOCUMENTACION_COMPLETADA.md",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\DOCUMENTACION_COMPLETADA.md",
-              "RelativeDocumentMoniker": "RunaTalento\\DOCUMENTACION_COMPLETADA.md",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\DOCUMENTACION_COMPLETADA.md",
-              "RelativeToolTip": "RunaTalento\\DOCUMENTACION_COMPLETADA.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANwBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-28T03:57:07.585Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "INDICE_DOCUMENTACION.md",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\INDICE_DOCUMENTACION.md",
-              "RelativeDocumentMoniker": "RunaTalento\\INDICE_DOCUMENTACION.md",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\INDICE_DOCUMENTACION.md",
-              "RelativeToolTip": "RunaTalento\\INDICE_DOCUMENTACION.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAO0BAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-28T03:56:23.416Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "DIAGRAMAS_CASOS_USO.md",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\DIAGRAMAS_CASOS_USO.md",
-              "RelativeDocumentMoniker": "RunaTalento\\DIAGRAMAS_CASOS_USO.md",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\DIAGRAMAS_CASOS_USO.md",
-              "RelativeToolTip": "RunaTalento\\DIAGRAMAS_CASOS_USO.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkCAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-28T03:55:35.179Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ESPECIFICACION_CASOS_USO.md",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\ESPECIFICACION_CASOS_USO.md",
-              "RelativeDocumentMoniker": "RunaTalento\\ESPECIFICACION_CASOS_USO.md",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\ESPECIFICACION_CASOS_USO.md",
-              "RelativeToolTip": "RunaTalento\\ESPECIFICACION_CASOS_USO.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIQDAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-28T03:54:36.31Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "02_Diagrama_Calificar_Detallado.puml",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Diagramas\\02_Diagrama_Calificar_Detallado.puml",
-              "RelativeDocumentMoniker": "RunaTalento\\Diagramas\\02_Diagrama_Calificar_Detallado.puml",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Diagramas\\02_Diagrama_Calificar_Detallado.puml",
-              "RelativeToolTip": "RunaTalento\\Diagramas\\02_Diagrama_Calificar_Detallado.puml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-28T03:20:24.761Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ICalificacionStrategy.cs",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Strategies\\ICalificacionStrategy.cs",
-              "RelativeDocumentMoniker": "RunaTalento\\Services\\Strategies\\ICalificacionStrategy.cs",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Strategies\\ICalificacionStrategy.cs",
-              "RelativeToolTip": "RunaTalento\\Services\\Strategies\\ICalificacionStrategy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Program.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Program.cs",
+              "ToolTip": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Program.cs",
+              "RelativeToolTip": "RunaTalento\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T03:19:34.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GUIA_DE_USO.md",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\GUIA_DE_USO.md",
-              "RelativeDocumentMoniker": "RunaTalento\\GUIA_DE_USO.md",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\GUIA_DE_USO.md",
-              "RelativeToolTip": "RunaTalento\\GUIA_DE_USO.md",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-28T03:16:17.724Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LIMPIEZA_COMENTARIOS.md",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\LIMPIEZA_COMENTARIOS.md",
-              "RelativeDocumentMoniker": "RunaTalento\\LIMPIEZA_COMENTARIOS.md",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\LIMPIEZA_COMENTARIOS.md",
-              "RelativeToolTip": "RunaTalento\\LIMPIEZA_COMENTARIOS.md",
-              "ViewState": "AgIAALcAAAAAAAAAAAAAAPYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-28T03:33:55.971Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "03_Diagrama_Flujo_Gamificacion.puml",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Diagramas\\03_Diagrama_Flujo_Gamificacion.puml",
-              "RelativeDocumentMoniker": "RunaTalento\\Diagramas\\03_Diagrama_Flujo_Gamificacion.puml",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Diagramas\\03_Diagrama_Flujo_Gamificacion.puml",
-              "RelativeToolTip": "RunaTalento\\Diagramas\\03_Diagrama_Flujo_Gamificacion.puml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-28T03:20:24.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CalificacionEstandarStrategy.cs",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Strategies\\CalificacionEstandarStrategy.cs",
-              "RelativeDocumentMoniker": "RunaTalento\\Services\\Strategies\\CalificacionEstandarStrategy.cs",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Strategies\\CalificacionEstandarStrategy.cs",
-              "RelativeToolTip": "RunaTalento\\Services\\Strategies\\CalificacionEstandarStrategy.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAEBVwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T03:23:50.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Actividad.cs",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Models\\Actividad.cs",
-              "RelativeDocumentMoniker": "RunaTalento\\Models\\Actividad.cs",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Models\\Actividad.cs",
-              "RelativeToolTip": "RunaTalento\\Models\\Actividad.cs",
-              "ViewState": "AgIAAI0AAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T03:26:01.075Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "RESUMEN_REFACTORIZACION.md",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\RESUMEN_REFACTORIZACION.md",
-              "RelativeDocumentMoniker": "RunaTalento\\RESUMEN_REFACTORIZACION.md",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\RESUMEN_REFACTORIZACION.md",
-              "RelativeToolTip": "RunaTalento\\RESUMEN_REFACTORIZACION.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-28T03:34:29.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "01_Diagrama_General_Casos_Uso.puml",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Diagramas\\01_Diagrama_General_Casos_Uso.puml",
-              "RelativeDocumentMoniker": "RunaTalento\\Diagramas\\01_Diagrama_General_Casos_Uso.puml",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Diagramas\\01_Diagrama_General_Casos_Uso.puml",
-              "RelativeToolTip": "RunaTalento\\Diagramas\\01_Diagrama_General_Casos_Uso.puml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-28T03:20:24.691Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "DocenteController.cs",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Controllers\\DocenteController.cs",
-              "RelativeDocumentMoniker": "RunaTalento\\Controllers\\DocenteController.cs",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Controllers\\DocenteController.cs",
-              "RelativeToolTip": "RunaTalento\\Controllers\\DocenteController.cs",
-              "ViewState": "AgIAAKkBAAAAAAAAAIBZwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T03:26:40.743Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "GamificacionService.cs",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\GamificacionService\\GamificacionService.cs",
-              "RelativeDocumentMoniker": "RunaTalento\\Services\\GamificacionService\\GamificacionService.cs",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\GamificacionService\\GamificacionService.cs",
-              "RelativeToolTip": "RunaTalento\\Services\\GamificacionService\\GamificacionService.cs",
-              "ViewState": "AgIAAKUAAAAAAAAAAGBlwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T03:25:27.713Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "CalificacionBusinessController.cs",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Controllers\\CalificacionBusinessController.cs",
-              "RelativeDocumentMoniker": "RunaTalento\\Services\\Controllers\\CalificacionBusinessController.cs",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Controllers\\CalificacionBusinessController.cs",
-              "RelativeToolTip": "RunaTalento\\Services\\Controllers\\CalificacionBusinessController.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAKBhwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T03:25:10.807Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ActividadDificultadDecorator.cs",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Decorators\\ActividadDificultadDecorator.cs",
-              "RelativeDocumentMoniker": "RunaTalento\\Services\\Decorators\\ActividadDificultadDecorator.cs",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Decorators\\ActividadDificultadDecorator.cs",
-              "RelativeToolTip": "RunaTalento\\Services\\Decorators\\ActividadDificultadDecorator.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T03:24:59.273Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ActividadUrgenciaDecorator.cs",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Decorators\\ActividadUrgenciaDecorator.cs",
-              "RelativeDocumentMoniker": "RunaTalento\\Services\\Decorators\\ActividadUrgenciaDecorator.cs",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Decorators\\ActividadUrgenciaDecorator.cs",
-              "RelativeToolTip": "RunaTalento\\Services\\Decorators\\ActividadUrgenciaDecorator.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T03:24:51.618Z",
+              "WhenOpened": "2025-11-29T00:34:18.767Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "ActividadDecorator.cs",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Decorators\\ActividadDecorator.cs",
-              "RelativeDocumentMoniker": "RunaTalento\\Services\\Decorators\\ActividadDecorator.cs",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Decorators\\ActividadDecorator.cs",
-              "RelativeToolTip": "RunaTalento\\Services\\Decorators\\ActividadDecorator.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Title": "20251201000000_AgregarColumnasArchivos.cs",
+              "DocumentMoniker": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Migrations\\20251201000000_AgregarColumnasArchivos.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Migrations\\20251201000000_AgregarColumnasArchivos.cs",
+              "ToolTip": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Migrations\\20251201000000_AgregarColumnasArchivos.cs",
+              "RelativeToolTip": "RunaTalento\\Migrations\\20251201000000_AgregarColumnasArchivos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAxwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T03:24:44.804Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-29T00:34:13.849Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "ActividadBase.cs",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Decorators\\ActividadBase.cs",
-              "RelativeDocumentMoniker": "RunaTalento\\Services\\Decorators\\ActividadBase.cs",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Decorators\\ActividadBase.cs",
-              "RelativeToolTip": "RunaTalento\\Services\\Decorators\\ActividadBase.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T03:24:39.039Z",
-              "EditorCaption": ""
+              "Title": "AplicarColumnasArchivos.sql",
+              "DocumentMoniker": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Migrations\\AplicarColumnasArchivos.sql",
+              "RelativeDocumentMoniker": "RunaTalento\\Migrations\\AplicarColumnasArchivos.sql",
+              "ToolTip": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Migrations\\AplicarColumnasArchivos.sql",
+              "RelativeToolTip": "RunaTalento\\Migrations\\AplicarColumnasArchivos.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-11-29T00:34:12.664Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "IActividadComponent.cs",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Decorators\\IActividadComponent.cs",
-              "RelativeDocumentMoniker": "RunaTalento\\Services\\Decorators\\IActividadComponent.cs",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Decorators\\IActividadComponent.cs",
-              "RelativeToolTip": "RunaTalento\\Services\\Decorators\\IActividadComponent.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAGBlwAAAAAAAAAAAAAAAAA==",
+              "Title": "DocenteController.cs",
+              "DocumentMoniker": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Controllers\\DocenteController.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Controllers\\DocenteController.cs",
+              "ToolTip": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Controllers\\DocenteController.cs",
+              "RelativeToolTip": "RunaTalento\\Controllers\\DocenteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAxwK4BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T03:24:32.82Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-29T00:31:22.733Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "LogCalificacionObserver.cs",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Observers\\LogCalificacionObserver.cs",
-              "RelativeDocumentMoniker": "RunaTalento\\Services\\Observers\\LogCalificacionObserver.cs",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Observers\\LogCalificacionObserver.cs",
-              "RelativeToolTip": "RunaTalento\\Services\\Observers\\LogCalificacionObserver.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Title": "CalificacionBusinessController.cs",
+              "DocumentMoniker": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\Controllers\\CalificacionBusinessController.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Services\\Controllers\\CalificacionBusinessController.cs",
+              "ToolTip": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\Controllers\\CalificacionBusinessController.cs",
+              "RelativeToolTip": "RunaTalento\\Services\\Controllers\\CalificacionBusinessController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAKBhwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T03:24:26.806Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-28T03:25:10.807Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "CalificacionNotifier.cs",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Observers\\CalificacionNotifier.cs",
-              "RelativeDocumentMoniker": "RunaTalento\\Services\\Observers\\CalificacionNotifier.cs",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Observers\\CalificacionNotifier.cs",
-              "RelativeToolTip": "RunaTalento\\Services\\Observers\\CalificacionNotifier.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAIBZwAAAAAAAAAAAAAAAAA==",
+              "Title": "ActividadDificultadDecorator.cs",
+              "DocumentMoniker": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\Decorators\\ActividadDificultadDecorator.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Services\\Decorators\\ActividadDificultadDecorator.cs",
+              "ToolTip": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\Decorators\\ActividadDificultadDecorator.cs",
+              "RelativeToolTip": "RunaTalento\\Services\\Decorators\\ActividadDificultadDecorator.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T03:24:20.422Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-28T03:24:59.273Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "ICalificacionObserver.cs",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Observers\\ICalificacionObserver.cs",
-              "RelativeDocumentMoniker": "RunaTalento\\Services\\Observers\\ICalificacionObserver.cs",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Observers\\ICalificacionObserver.cs",
-              "RelativeToolTip": "RunaTalento\\Services\\Observers\\ICalificacionObserver.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAABgwAAAAAAAAAAAAAAAAA==",
+              "Title": "ActividadUrgenciaDecorator.cs",
+              "DocumentMoniker": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\Decorators\\ActividadUrgenciaDecorator.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Services\\Decorators\\ActividadUrgenciaDecorator.cs",
+              "ToolTip": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\Decorators\\ActividadUrgenciaDecorator.cs",
+              "RelativeToolTip": "RunaTalento\\Services\\Decorators\\ActividadUrgenciaDecorator.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T03:24:14.118Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-28T03:24:51.618Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "CalificacionStrategyFactory.cs",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Factories\\CalificacionStrategyFactory.cs",
-              "RelativeDocumentMoniker": "RunaTalento\\Services\\Factories\\CalificacionStrategyFactory.cs",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Factories\\CalificacionStrategyFactory.cs",
-              "RelativeToolTip": "RunaTalento\\Services\\Factories\\CalificacionStrategyFactory.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAIBZwAAAAAAAAAAAAAAAAA==",
+              "Title": "ActividadDecorator.cs",
+              "DocumentMoniker": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\Decorators\\ActividadDecorator.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Services\\Decorators\\ActividadDecorator.cs",
+              "ToolTip": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\Decorators\\ActividadDecorator.cs",
+              "RelativeToolTip": "RunaTalento\\Services\\Decorators\\ActividadDecorator.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T03:24:08.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-28T03:24:44.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GamificacionService.cs",
+              "DocumentMoniker": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\GamificacionService\\GamificacionService.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Services\\GamificacionService\\GamificacionService.cs",
+              "ToolTip": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\GamificacionService\\GamificacionService.cs",
+              "RelativeToolTip": "RunaTalento\\Services\\GamificacionService\\GamificacionService.cs",
+              "ViewState": "AgIAAKgAAAAAAAAAAAA3wKsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T03:25:27.713Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "CalificacionConPenalizacionStrategy.cs",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Strategies\\CalificacionConPenalizacionStrategy.cs",
-              "RelativeDocumentMoniker": "RunaTalento\\Services\\Strategies\\CalificacionConPenalizacionStrategy.cs",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Strategies\\CalificacionConPenalizacionStrategy.cs",
-              "RelativeToolTip": "RunaTalento\\Services\\Strategies\\CalificacionConPenalizacionStrategy.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAEBVwAAAAAAAAAAAAAAAAA==",
+              "Title": "ActividadBase.cs",
+              "DocumentMoniker": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\Decorators\\ActividadBase.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Services\\Decorators\\ActividadBase.cs",
+              "ToolTip": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\Decorators\\ActividadBase.cs",
+              "RelativeToolTip": "RunaTalento\\Services\\Decorators\\ActividadBase.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T03:24:02.837Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-28T03:24:39.039Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "IActividadComponent.cs",
+              "DocumentMoniker": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\Decorators\\IActividadComponent.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Services\\Decorators\\IActividadComponent.cs",
+              "ToolTip": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\Decorators\\IActividadComponent.cs",
+              "RelativeToolTip": "RunaTalento\\Services\\Decorators\\IActividadComponent.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAGBlwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T03:24:32.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LogCalificacionObserver.cs",
+              "DocumentMoniker": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\Observers\\LogCalificacionObserver.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Services\\Observers\\LogCalificacionObserver.cs",
+              "ToolTip": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\Observers\\LogCalificacionObserver.cs",
+              "RelativeToolTip": "RunaTalento\\Services\\Observers\\LogCalificacionObserver.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T03:24:26.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CalificacionNotifier.cs",
+              "DocumentMoniker": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\Observers\\CalificacionNotifier.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Services\\Observers\\CalificacionNotifier.cs",
+              "ToolTip": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\Observers\\CalificacionNotifier.cs",
+              "RelativeToolTip": "RunaTalento\\Services\\Observers\\CalificacionNotifier.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAIBZwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T03:24:20.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ICalificacionObserver.cs",
+              "DocumentMoniker": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\Observers\\ICalificacionObserver.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Services\\Observers\\ICalificacionObserver.cs",
+              "ToolTip": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\Observers\\ICalificacionObserver.cs",
+              "RelativeToolTip": "RunaTalento\\Services\\Observers\\ICalificacionObserver.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAABgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T03:24:14.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CalificacionStrategyFactory.cs",
+              "DocumentMoniker": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\Factories\\CalificacionStrategyFactory.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Services\\Factories\\CalificacionStrategyFactory.cs",
+              "ToolTip": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\Factories\\CalificacionStrategyFactory.cs",
+              "RelativeToolTip": "RunaTalento\\Services\\Factories\\CalificacionStrategyFactory.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAIBZwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T03:24:08.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CalificacionConPenalizacionStrategy.cs",
+              "DocumentMoniker": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\Strategies\\CalificacionConPenalizacionStrategy.cs",
+              "RelativeDocumentMoniker": "RunaTalento\\Services\\Strategies\\CalificacionConPenalizacionStrategy.cs",
+              "ToolTip": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\Strategies\\CalificacionConPenalizacionStrategy.cs",
+              "RelativeToolTip": "RunaTalento\\Services\\Strategies\\CalificacionConPenalizacionStrategy.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAEBVwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T03:24:02.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CalificacionConBonificacionStrategy.cs",
-              "DocumentMoniker": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Strategies\\CalificacionConBonificacionStrategy.cs",
+              "DocumentMoniker": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\Strategies\\CalificacionConBonificacionStrategy.cs",
               "RelativeDocumentMoniker": "RunaTalento\\Services\\Strategies\\CalificacionConBonificacionStrategy.cs",
-              "ToolTip": "C:\\Users\\Piero\\Desktop\\DIARS (1)\\ProyectoFinalDiars\\RunaTalento\\Services\\Strategies\\CalificacionConBonificacionStrategy.cs",
+              "ToolTip": "C:\\Users\\EVELYN VICTORIA\\Downloads\\ProyectoFinalDiars\\RunaTalento\\Services\\Strategies\\CalificacionConBonificacionStrategy.cs",
               "RelativeToolTip": "RunaTalento\\Services\\Strategies\\CalificacionConBonificacionStrategy.cs",
               "ViewState": "AgIAABUAAAAAAAAAAEBVwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T03:23:56.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-28T03:23:56.992Z"
             }
           ]
         }
